@@ -52,10 +52,10 @@ class appi_Autoloader {
     	
         $file = str_replace( '_', '-', strtolower( $class_name ) );
         $file = 'class-' . $file;
-
-
-        if ( is_readable(trailingslashit( get_template_directory() . '/lib' ) . str_replace('\\', '-', $file)  . '.php') ) {
-            include_once trailingslashit( get_template_directory() . '/lib' ) . str_replace('\\', '-', $file)  . '.php';
+        $lib  = '/lib';
+        $filename = str_replace('appi\\', '', $file);
+        if ( is_readable(trailingslashit( get_template_directory() . $lib ) . $filename  . '.php') ) {
+            include_once trailingslashit( get_template_directory() . $lib ) . $filename  . '.php';
         }
         return;
     }
