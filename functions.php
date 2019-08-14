@@ -66,5 +66,4 @@ appi_Autoloader::_instance();
 /**
  * Class autoloader.
  */
-$post = new Appi\Post();
-echo $post->Content();
+new Appi\Config();
