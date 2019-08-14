@@ -10,7 +10,5 @@ A simple boilerplate to autoload classes inside wordpress without composer.
 <p>
 	In my example my class inside lib folder is named Config, so the file name is class-config.php in Appi namespace.
 	To use the class : 
-	<pre>
-		new Appi\Config();
-	</pre>
+	<pre>new Appi\Config();</pre>
 </p>
