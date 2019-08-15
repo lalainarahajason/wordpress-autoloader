@@ -16,8 +16,6 @@ A simple boilerplate to autoload classes inside wordpress without composer.
 	for plugins don't forget to change 
 	<pre> get_template_directory() </pre>
 	by
-	<pre>
-		plugin_dir_path(__FILE__)
-	</pre>
-	<a href="https://bit.ly/31BMwyw">plugin_dir_path</a>
+	<pre>plugin_dir_path(__FILE__) 	<a href="https://bit.ly/31BMwyw">plugin_dir_path</a>
+ </pre>
 </p>
